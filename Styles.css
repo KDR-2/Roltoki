@@ -1,0 +1,95 @@
+:root{
+    --fondo: #465467;
+    --fondoDelAside:aquamarine;
+}
+body{
+    margin: 0;
+    background-color: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* Algo solo especial pare este layout */
+
+
+/* De aqui para arriba hay preparativos para la pagina web, como un resset falso que voy  aprobar mientras apendo y de esta linea para abajo voy a establecer estilos propios de la pag. deseenme */
+
+.megaContainer{
+    max-width: 86rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head{
+    background-color: #eeeeee;
+}
+.list{
+    display: flex;
+}
+.list__item{
+    padding: 1em;
+    cursor: pointer;
+}
+.list__a{
+    color: inherit;
+
+}
+.mainSection,.asideElement{
+    float: left;
+
+}
+.asideElement{
+    width: 30%;
+    background-color: aquamarine;
+}
+.mainSection{
+    width: 70%;
+    background-color: #ffffff;
+}
+.sectionText, .articleAside{
+    padding: 1em;
+}
+/* .sectionText__title,.sectionText__p,.articleAside__title{
+    margin-bottom: 1em;
+} */
+.sectionText__title,.articleAside__title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.sectionText__p{
+    margin-bottom: 1em;
+}
+.aticleAside__p{
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+}
+.footerman{
+    color: #fff;
+    clear: both;
+    background-color:#e3346c ;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em ;
+}
+
+@media (hover:hover){
+    .list__item:hover{
+        background-color: #e3346c;
+    }
+}
